@@ -1,0 +1,119 @@
+<!doctype html>
+<!--set language to English-->
+<html lang="en">
+<!--Open Head Section-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--make page responsive to device screen size-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="http://typodermicfonts.com/foo/" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Stalemate" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Gravitas+One" rel="stylesheet">
+
+<title>The Bear's Cabin</title>
+
+<!--css stylesheet mystyle attached -->
+<link href="css/mystyle.css" rel="stylesheet" type="text/css">
+
+</head>
+<!--Close Head Section-->
+
+<body>
+<header>
+<img src="images/headerbear.jpg" alt="The Bears Cabin">
+</header>
+<!--Responsive Nav Bar-->
+<div class="topnav" id="myTopnav">
+  <a href="index.html"><img src="images/navbear.jpg" alt="The Bear's Cabin"/></a>
+  <a href="index.html" >Home</a>
+  <a href="about.html">About the Bear</a>
+  <a href="commission_pieces.html">Commission a Piece</a>
+  <a href="portfolio.html">Portfolio</a>
+  <div class="dropdown">
+    <button class="dropbutton">Products
+      <i class="fa fa-caret-down"></i>
+    </button>
+     <div class="dropdown-list">
+	      <a href="wedding_gifts.html">Anniversary, Engagement &amp; Wedding Gift Ideas</a>
+	      <a href="birthday_gifts.html">Birthday Gift Ideas</a>
+		  <a href="baby_gifts.html">Christening &amp; New Baby Gift Ideas</a>
+		  <a class ="active" href="communion_gifts.html">Communion &amp; Confirmation Gift Ideas</a>
+		  <a href="FatherDay_gifts.html">Father's &amp; Mother's Day Gift Ideas</a>
+		  <a href="frames.html">Frames</a>
+		  <a href="newhome_gifts.html">New Home Gift Ideas</a>
+		  <a href="retirement.html">Retirement Gift Ideas</a>
+    </div>
+  </div>
+  <a href="contact.html">Contact</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<main class="threecolumnsmain">
+    <div>
+      <h1>Communion &amp; Confirmation Gifts</h1>
+     <p>There are endless design possibilities for every gift for any special occasion. If you have an idea, a special event coming up and zero gift ideas or have seen something made by
+	 	        The Bear’s Cabin that you liked, get in touch!</p>
+	 	        <p>The Bear’s Cabin is on <a href="https://www.facebook.com/thebearscabin/" target="_blank">Facebook</a> and <a href="http://www.instagram.com/thebearscabin/" target="_blank">Instagram</a>, I would love
+	 	        to hear from you.</p>
+	 	        <p>You can use the contact form by clicking <a href="contact.html">here</a>, email directly
+      		using <a href="mailto:thebearscabin@outlook.ie">thebearscabin@outlook.ie</a> or contact The Bear's Cabin by using the social media mentioned above.</p>
+    </div>
+
+    <div class="row">
+    <div class="column">
+      <img src="images/confimg.jpg" alt="communion confirmation gift">
+        <p>Wooden Plaque with Cross &amp; Dove</p>
+    </div>
+
+    <div class="column">
+      <img src="images/commimg.jpg" alt="communion confirmation gift">
+        <p>Wooden Plaque with girl cut out &amp; prayer</p>
+    </div>
+
+    <div class="column">
+      <img src="images/confimg2.jpg" alt="communion confirmation gift">
+        <p>Cross Plaque with Name &amp; Date</p>
+    </div>
+
+	</div>
+  <hr>
+</main>
+
+<!--Fixed Footer applied over all pages-->
+<footer>
+<a href="sitemap.html">Sitemap</a><br>
+<div class="footertext">
+		&copy; Copyright 2018 The Bear's Cabin<br>
+		Website Design by Pauline Finlay<br>
+		<!--Script for page update-->
+		<script type="text/javascript">
+		<!-- script from BoogieJack.com-->
+		var m = "Page Last Updated " + document.lastModified;
+		var p = m.length-8;
+		document.writeln("<div style='font-size: 12px;'>");
+		document.write(m.substring(p, 0));
+		document.writeln("</div>");
+		</script>
+</div>
+<div class="footericons">
+		<ul>
+		<li><a href="https://www.facebook.com/thebearscabin/" target="_blank"><img src="images/facebook.png" width="50" height="50" alt="facebook logo"></a></li>
+		<li><a href="http://www.instagram.com/thebearscabin/" target="_blank"><img src="images/instaglogo.png" width="50" height="50" alt="instagram logo"></a></li>
+		<li><a href="mailto:thebearscabin@outlook.ie"><img src="images/mail.png" width="50" height="50" alt="email logo"></a></li>
+		</ul>
+		</div>
+</footer>
+
+<script>
+ function myFunction() {
+     var x = document.getElementById("myTopnav");
+     if (x.className === "topnav") {
+         x.className += " responsive";
+     } else {
+         x.className = "topnav";
+     }
+ }
+</script>
+</body>
+</html>

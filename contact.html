@@ -1,0 +1,149 @@
+<!doctype html>
+<!--set language to English-->
+<html lang="en">
+<!--Open Head Section-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--make page responsive to device screen size-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="http://typodermicfonts.com/foo/" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Stalemate" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Gravitas+One" rel="stylesheet">
+
+<title>The Bear's Cabin</title>
+
+<!--css stylesheet mystyle attached -->
+<link href="css/mystyle.css" rel="stylesheet" type="text/css">
+
+</head>
+<!--Close Head Section-->
+
+<body class="twocolumn">
+<header>
+<img src="images/headerbear.jpg" alt="The Bears Cabin">
+</header>
+<!--Responsive Nav Bar-->
+<div class="topnav" id="myTopnav">
+  <a href="index.html"><img src="images/navbear.jpg" alt="The Bear's Cabin"/></a>
+  <a href="index.html" >Home</a>
+  <a href="about.html">About the Bear</a>
+  <a href="commission_pieces.html">Commission a Piece</a>
+  <a href="portfolio.html">Portfolio</a>
+  <div class="dropdown">
+    <button class="dropbutton">Products
+      <i class="fa fa-caret-down"></i>
+    </button>
+     <div class="dropdown-list">
+	      <a href="wedding_gifts.html">Anniversary, Engagement &amp; Wedding Gift Ideas</a>
+	      <a href="birthday_gifts.html">Birthday Gift Ideas</a>
+		  <a href="baby_gifts.html">Christening &amp; New Baby Gift Ideas</a>
+		  <a href="communion_gifts.html">Communion &amp; Confirmation Gift Ideas</a>
+		  <a href="FatherDay_gifts.html">Father's &amp; Mother's Day Gift Ideas</a>
+		  <a href="frames.html">Frames</a>
+		  <a href="newhome_gifts.html">New Home Gift Ideas</a>
+		  <a href="retirement.html">Retirement Gift Ideas</a>
+    </div>
+  </div>
+  <a class = "active" href="contact.html">Contact</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+	<main>
+	<h1>Contact Us</h1> <!--page title-->
+		<div style="overflow:auto">
+		<div class="col1">
+		<form class="enquiryform" action="mailto:thebearscabin@outlook.ie" method="post"> <!--open form with action mailto-->
+			<fieldset> <!--fieldset for user info-->
+			<legend>Enquiry Form</legend> <!--heading-->
+			<label for="name">Name:</label> <input type="text" name="Name" required placeholder="Enter Name" autofocus autocomplete="off" id="name" /> <!--name textfield-->
+			<label for="email">Email Address:</label> <input type="email" name="Email" required placeholder="Enter Email Address" autocomplete="off" id="email" /> <!--email textfield-->
+			<label for="giftcat">Gift Category:</label>
+			<!--dropdown for options-->
+			<select id="giftcat" name="giftcat">
+			  <option value="wedding">Anniversary, Engagement &amp; Wedding Gifts</option>
+			  <option value="birthday">Birthday Gifts</option>
+			  <option value="baby">Christening &amp; New Baby Gifts</option>
+			  <option value="communion">Communion &amp; Confirmation Gifts</option>
+			  <option value="parents">Father's &amp; Mother's Day Gifts</option>
+			  <option value="frames">Frames</option>
+			  <option value="newhome">New Home Gifts</option>
+			  <option value="retirement">Retirement Gifts</option>
+	        </select>
+
+			<textarea rows="20" class="fullwidth" name="comments">Comments:</textarea>
+
+			<div class="buttons">
+			<input type="submit" name="Submit" id = "submit" value="Submit">
+			<input type = "reset" name = "reset" id = "reset" value = "Reset">
+			</div>
+			</fieldset> <!--close fieldset-->
+			</form>
+			</div>
+
+	<div class="col2">
+	<form class="surveyform" action="mailto:thebearscabin@outlook.ie" method="post"> <!--open form with action mailto-->
+
+				<fieldset> <!--fieldset for marketing survey-->
+					<legend>Marketing Survey</legend> <!--heading-->
+					<div class="enqsurvey">
+					<h3>If you have a moment, we'd appreciate it if you would let us know how you heard about the Bear's Cabin</h3> <!--user info-->
+					<h4><label for="emailadd">Email Address:</label> <input type="email" name="Email" required placeholder="Enter Email Address" autocomplete="off" id = "emailadd"/></h4> <!--email textfield-->
+
+						<input type="radio" name="hear_about" value="search engine" id="isearch"><label for="isearch">Internet Search</label> <!--radio buttons for options-->
+						<input type="radio" name="hear_about" value="facebook" id="fbook"><label for="fbook">Facebook</label>
+						<input type="radio" name="hear_about" value="instagram" id="igram"><label for="igram">Instagram</label>
+						<input type="radio" name="hear_about" value="word of mouth" id="mouth"><label for="mouth">Word of Mouth</label>
+						<input type="radio" name="hear_about" value="other" id="other"><label for="other"> Other</label>
+
+						<h4>If other, please specify: <input type="text" name="specify" /></h4> <!--textfield for source of other input--><br>
+
+						<div class="buttons">
+						<input type="submit" name="Submit" value="Submit" />
+						</div>
+					</div>
+				</fieldset> <!--close fieldset--> <br>
+	  </form>
+	  </div>
+</div>
+		<hr>
+  </main>
+
+<!--Fixed Footer applied over all pages-->
+<footer>
+<a href="sitemap.html">Sitemap</a>
+<div class="footertext">
+		&copy; Copyright 2018 The Bear's Cabin<br>
+		Website Design by Pauline Finlay<br>
+		<!--Script for page update-->
+		<script type="text/javascript">
+		<!-- script from BoogieJack.com-->
+		var m = "Page Last Updated " + document.lastModified;
+		var p = m.length-8;
+		document.writeln("<div style='font-size: 12px;'>");
+		document.write(m.substring(p, 0));
+		document.writeln("</div>");
+		</script>
+</div>
+<div class="footericons">
+		<ul>
+		<li><a href="https://www.facebook.com/thebearscabin/" target="_blank"><img src="images/facebook.png" width="50" height="50" alt="facebook logo"></a></li>
+		<li><a href="http://www.instagram.com/thebearscabin/" target="_blank"><img src="images/instaglogo.png" width="50" height="50" alt="instagram logo"></a></li>
+		<li><a href="mailto:thebearscabin@outlook.ie"><img src="images/mail.png" width="50" height="50" alt="email logo"></a></li>
+		</ul>
+		</div>
+</footer>
+
+<script>
+ function myFunction() {
+     var x = document.getElementById("myTopnav");
+     if (x.className === "topnav") {
+         x.className += " responsive";
+     } else {
+         x.className = "topnav";
+     }
+ }
+</script>
+</body>
+
+</html>

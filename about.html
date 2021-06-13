@@ -1,0 +1,115 @@
+<!doctype html>
+<!--set language to English-->
+<html lang="en">
+<!--Open Head Section-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--make page responsive to device screen size-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="http://typodermicfonts.com/foo/" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Stalemate" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Gravitas+One" rel="stylesheet">
+
+<title>The Bear's Cabin</title>
+
+<!--css stylesheet mystyle attached -->
+<link href="css/mystyle.css" rel="stylesheet" type="text/css">
+
+</head>
+<!--Close Head Section-->
+<body>
+
+<header>
+<img src="images/headerbear.jpg" alt="The Bears Cabin">
+</header>
+
+<!--Modifed Nav Bar for ste size page logo resized-->
+<div class="topnav" id="myTopnav">
+  <a href="index.html"><img src="images/navbear.jpg" alt="The Bear's Cabin"/></a>
+  <a href="index.html" >Home</a>
+  <a class="active" href="about.html">About the Bear</a>
+  <a href="commission_pieces.html">Commission a Piece</a>
+  <a href="portfolio.html">Portfolio</a>
+  <div class="dropdown">
+      <button class="dropbutton">Products
+        <i class="fa fa-caret-down"></i>
+      </button>
+       <div class="dropdown-list">
+  	      <a href="wedding_gifts.html">Anniversary, Engagement &amp; Wedding Gift Ideas</a>
+  	      <a href="birthday_gifts.html">Birthday Gift Ideas</a>
+  		  <a href="baby_gifts.html">Christening &amp; New Baby Gift Ideas</a>
+  		  <a href="communion_gifts.html">Communion &amp; Confirmation Gift Ideas</a>
+  		  <a href="FatherDay_gifts.html">Father's &amp; Mother's Day Gift Ideas</a>
+  		  <a href="frames.html">Frames</a>
+  		  <a href="newhome_gifts.html">New Home Gift Ideas</a>
+  		  <a href="retirement.html">Retirement Gift Ideas</a>
+      </div>
+  </div>
+  <a href="contact.html">Contact</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<main class="aboutmain">
+<!--One colum page-->
+
+  <h1>About the Bear</h1>
+  <img src="images/saw.jpg" alt="saw working">
+  <p>Designing and creating perfectly unique gifts is what The Bear’s Cabin love to do. All of my handcrafted pieces are made using unfinished wood, allowing me to select the perfect
+  finishing touches for each individual item. I also have a growing gallery of unique, handmade box frame gifts. I do endeavour to support other local businesses where I can.
+  While it’s not always possible, it is important to me to support rural communities as much as I can.</p>
+<p>It started out in County Leitrim, Ireland, making little gifts for our families and friends at the kitchen table. It was exciting to be able to give handmade, unique gifts for special
+occasions. Then, in Winter 2017, a friend introduced me to a new type of crafting using a scroll saw. With a last minute Christmas gift request, things have not been the same since,
+including my utility room!</p>
+<p>My little hobby started to change. I started to look for reasons to make things rather than waiting to make things for special occasions I was a part of. I realised that the skills
+I had already developed in other areas, like technology, could be used along with my new-found love of woodworking.</p>
+<p>I truly love learning new things, testing myself with new ideas and enabling others to be excited about the gifts they are giving! It is so rewarding to be able to design something for
+someone, simple or complex, and be able to follow it through to end with the perfect finish. My hands do most of the work, accompanied by significant amounts of brain power from beginning to end.</p>
+<p>If you have an idea, a special occasion coming up and zero gift ideas or have seen something made by The Bear’s Cabin that you liked, get in touch! The Bear’s Cabin is on Facebook and Instagram,
+I would love to hear from you. You can use the contact form by clicking here, email directly using thebearscabin@outlook.ie or contact The Bear's Cabin by using the social media mentioned above.</p>
+
+  <p><em><strong>The Bear's Cabin, Drumshanbo, Co. Leitrim</strong></em></p>
+  <p><strong>Tel:</strong><em> 00 353 87 362 6266</em></p>
+  <p><strong>Email:</strong><em><a href="mailto:thebearscabin@outlook.ie">thebearscabin@outlook.ie</a></em></p>
+
+</main>
+
+<!--Fixed Footer applied over all pages-->
+<footer>
+<a href="sitemap.html">Sitemap</a>
+<div class="footertext">
+		&copy; Copyright 2018 The Bear's Cabin<br>
+		Website Design by Pauline Finlay<br>
+		<!--Script for page update-->
+		<script type="text/javascript">
+		<!-- script from BoogieJack.com-->
+		var m = "Page Last Updated " + document.lastModified;
+		var p = m.length-8;
+		document.writeln("<div style='font-size: 12px;'>");
+		document.write(m.substring(p, 0));
+		document.writeln("</div>");
+		</script>
+</div>
+<div class="footericons">
+		<ul>
+		<li><a href="https://www.facebook.com/thebearscabin/" target="_blank"><img src="images/facebook.png" width="50" height="50" alt="facebook logo"></a></li>
+		<li><a href="http://www.instagram.com/thebearscabin/" target="_blank"><img src="images/instaglogo.png" width="50" height="50" alt="instagram logo"></a></li>
+		<li><a href="mailto:thebearscabin@outlook.ie"><img src="images/mail.png" width="50" height="50" alt="email logo"></a></li>
+		</ul>
+		</div>
+</footer>
+
+
+<script>
+ function myFunction() {
+     var x = document.getElementById("myTopnav");
+     if (x.className === "topnav") {
+         x.className += " responsive";
+     } else {
+         x.className = "topnav";
+     }
+ }
+</script>
+
+</body>
+</html>

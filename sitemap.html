@@ -1,0 +1,116 @@
+<!doctype html>
+<!--set language to English-->
+<html lang="en">
+<!--Open Head Section-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--make page responsive to device screen size-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="http://typodermicfonts.com/foo/" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Stalemate" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Gravitas+One" rel="stylesheet">
+
+<title>The Bear's Cabin</title>
+
+<!--css stylesheet mystyle attached -->
+<link href="css/fixedpagestyle.css" rel="stylesheet" type="text/css">
+
+</head>
+<!--Close Head Section-->
+
+<body>
+<!--Set max width for page to 360px-->
+<div id="wrapper">
+<header>
+<img src="images/headerbear.jpg" alt="The Bears Cabin">
+</header>
+
+<!--Fixed Navbar for small screen width-->
+<div class="navbar">
+  <a href="index.html"><img src="images/navbear.jpg" alt="The Bear's Cabin"/></a>
+  <div class="dropdown">
+      <button class="dropbtn" onclick="myFunction()">The Bear Trail
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content" id="myDropdown">
+          <a href="index.html" >Home</a>
+		  <a href="about.html">About the Bear</a>
+		  <a href="commission_pieces.html">Commission a Piece</a>
+		  <a href="portfolio.html">Portfolio</a>
+		  <a href="wedding_gifts.html">Anniversary, Engagement &amp; Wedding Gift Ideas</a>
+		  <a href="birthday_gifts.html">Birthday Gift Ideas</a>
+		  <a href="baby_gifts.html">Christening &amp; New Baby Gift Ideas</a>
+		  <a href="communion_gifts.html">Communion &amp; Confirmation Gift Ideas</a>
+		  <a href="FatherDay_gifts.html">Father's &amp; Mother's Day Gift Ideas</a>
+		  <a href="frames.html">Frames</a>
+		  <a href="newhome_gifts.html">New Home Gift Ideas</a>
+		  <a href="retirement.html">Retirement Gift Ideas</a>
+  		  <a href="contact.html">Contact</a>
+      </div>
+  </div>
+</div>
+
+<!--One column fixed width page-->
+<main>
+<h1>The Bear Trail</h1>
+
+  <h2><a href="index.html">Home</a></h2>
+  <h2><a href="about.html">About the Bear</a></h2>
+  <h2><a href="commission_pieces.html">Commission a Piece</a></h2>
+  <h2><a href="portfolio.html">Portfolio</a></h2>
+  <h2>Products</h2>
+      <h3><a href="wedding_gifts.html">Anniversary, Engagement &amp; Wedding Gift Ideas</a></h3>
+      <h3><a href="birthday_gifts.html">Birthday Gift Ideas</a></h3>
+	  <h3><a href="baby_gifts.html">Christening &amp; New Baby Gift Ideas</a></h3>
+	  <h3><a href="communion_gifts.html">Communion &amp; Confirmation Gift Ideas</a></h3>
+	  <h3><a href="FatherDay_gifts.html">Father's &amp; Mother's Day Gift Ideas</a></h3>
+	  <h3><a href="frames.html">Frames</a></h3>
+	  <h3><a href="newhome_gifts.html">New Home Gift Ideas</a></h3>
+	  <h3><a href="retirement.html">Retirement Gift Ideas</a></h3>
+  <h2><a href="contact.html">Contact</a></h2>
+  <h2><a href="https://www.facebook.com/thebearscabin/" target="_blank">Facebook</a></h2>
+  <h2><a href="http://www.instagram.com/thebearscabin/" target="_blank">Instagram</a></h2>
+  <h2><a href="mailto:thebearscabin@outlook.ie">Email</a></h2>
+
+</main>
+
+<!--Fixed Footer applied to page-->
+<footer>
+<a href="sitemap.html">Sitemap</a><br><br>
+&copy; Copyright 2018 The Bear's Cabin<br>
+Website Design by Pauline Finlay<br>
+<!--Script for page update-->
+<script>
+<!-- script from BoogieJack.com-->
+var m = "Page Last Updated " + document.lastModified;
+var p = m.length-8;
+document.writeln("<div style='font-size: 12px;'>");
+document.write(m.substring(p, 0));
+document.writeln("</div>");
+</script>
+	<ul>
+		<li><a href="https://www.facebook.com/thebearscabin/" target="_blank"><img src="images/facebook.png" width="50" height="50" alt="facebook logo"></a></li>
+		<li><a href="http://www.instagram.com/thebearscabin/" target="_blank"><img src="images/instaglogo.png" width="50" height="50" alt="instagram logo"></a></li>
+		<li><a href="mailto:thebearscabin@outlook.ie"><img src="images/mail.png" width="50" height="50" alt="email logo"></a></li>
+	</ul>
+</footer>
+</div>
+<script>
+/* When the user clicks on the button,toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
+</body>
+</html>
